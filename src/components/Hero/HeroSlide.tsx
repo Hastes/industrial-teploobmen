@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { CircleArrowButton } from "@/components/ui/CircleArrowButton";
+import { openQuickRequestModal } from "@/lib/quickRequest";
 import { assetPath } from "@/lib/assetPath";
 import type { HeroSlide as HeroSlideData } from "@/data/hero";
 
@@ -37,6 +38,12 @@ export function HeroSlideBackground({
 }
 
 export function HeroSlideContent({ slide, isActive }: LayerProps) {
+  const onRequestClick = () => {
+    openQuickRequestModal(
+      slide.id === "nasosy" ? "pump-station" : "heat-exchanger",
+    );
+  };
+
   return (
     <div
       aria-hidden={!isActive}
@@ -76,7 +83,7 @@ export function HeroSlideContent({ slide, isActive }: LayerProps) {
               isActive ? "translate-y-0 opacity-100" : "translate-y-3 opacity-0"
             }`}
           >
-            <CircleArrowButton href={slide.cta.href} label={slide.cta.label} />
+            <CircleArrowButton label={slide.cta.label} onClick={onRequestClick} />
           </div>
         </div>
       </div>

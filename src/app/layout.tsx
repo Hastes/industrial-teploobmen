@@ -21,7 +21,7 @@ const manrope = Manrope({
 export const metadata: Metadata = {
   title: "БалтБизнесПром — инженерия движения и тепла",
   description:
-    "Подбор теплообменников и насосных станций под проект за 1 день. Расчёт, поставка, инженерная поддержка.",
+    "Подбор теплообменников и насосных станций под проект: первичный расчёт от 1 часа, коммерческое предложение в течение 1 рабочего дня.",
   icons: {
     icon: [{ url: "/assets/images/logo_white.png", type: "image/png" }],
     shortcut: ["/assets/images/logo_white.png"],

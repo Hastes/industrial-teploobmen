@@ -4,10 +4,11 @@ export type NavItem = {
 };
 
 export const NAV_ITEMS: NavItem[] = [
-  { label: "О компании", href: "#about" },
-  { label: "Оборудование", href: "#equipment" },
+  { label: "Каталог", href: "#equipment" },
+  { label: "Для кого", href: "#audiences" },
   { label: "Решения", href: "#solutions" },
-  { label: "Проекты", href: "#projects" },
-  { label: "Сервис", href: "#service" },
+  { label: "Процесс", href: "#process" },
+  { label: "Кейсы", href: "#cases" },
+  { label: "Цена", href: "#pricing" },
   { label: "Контакты", href: "#contacts" },
 ];
